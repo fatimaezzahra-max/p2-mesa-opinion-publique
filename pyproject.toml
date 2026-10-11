@@ -1,0 +1,24 @@
+[project]
+name = "tp-mesa"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "fati", email = "fatimaezzahraamarzoug@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "ipywidgets>=8.1.9",
+    "matplotlib>=3.11.2",
+    "mesa>=3.3.1",
+    "numpy>=2.4.6",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+tp-mesa = "tp_mesa:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
